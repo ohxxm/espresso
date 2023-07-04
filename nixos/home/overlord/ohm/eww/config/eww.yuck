@@ -1,0 +1,49 @@
+(defwidget left []
+  (box
+     :space-evenly false
+     :halign "start"
+     ()
+  )
+)
+
+(defwidget center []
+  (box
+     :space-evenly false
+     :halign "center"
+     ()
+  )
+)
+
+(defwidget right []
+  (box
+     :space-evenly false
+     :halign "end"
+     ()
+  )
+)
+
+(defwidget bar []
+  (box
+     :space-evenly false
+     :halign "end"
+     (left)
+     (center)
+     (right)
+  )
+)
+
+
+(defpoll time :interval "10s"
+  "date '+%H:%M %b %d, %Y'")
+
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "0%"
+                      :y "1%"
+                      :width "90%"
+                      :height "10px"
+                      :anchor "top center")
+  :reserve (struts :side "top" :distance "4%")
+  (bar))
+

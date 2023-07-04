@@ -1,0 +1,9 @@
+[submodule "nixos/home/ohm/awesome/rubato"]
+	path = nixos/home/ohm/awesome/rubato
+	url = https://github.com/andOrlando/rubato
+[submodule "nixos/home/ohm/awesome/color"]
+	path = nixos/home/ohm/awesome/color
+	url = https://github.com/andOrlando/color
+[submodule "nixos/home/ohm/awesome/bling"]
+	path = nixos/home/ohm/awesome/bling
+	url = https://github.com/blingcorp/bling
