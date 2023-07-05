@@ -17,8 +17,9 @@ IMMUTABLE / WIP / AESTHETIC
 <br>
 <br>
 
-| Feature              | Package                                                 |
-| -------------------- | ------------------------------------------------------- |
+| Feature              | Package                                                           |
+| -------------------- | ----------------------------------------------------------------- |
+| Operating System     | [`NixOS`](https://www.nixos.org)                                  |
 | Window Manager       | [`AwesomeWM`](https://github.com/awesomeWM/awesome)               |
 | Compositor           | [`pijulius/picom`](https://github.com/pijulius/picom)             |
 | Terminal             | [`WezTerm`](https://github.com/wez/wezterm)                       | 
