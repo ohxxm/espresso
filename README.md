@@ -54,6 +54,7 @@ rm configuration.nix && mv hardware-configuration.nix hosts/
 # Install NixOS with my configuration
 nixos-install --flake .#io --impure
 
+# OPTIONAL SECURE BOOT
 # Verify files are signed for secure boot
 sudo sbctl verify
 ```
@@ -63,7 +64,7 @@ sudo sbctl verify
 sudo sbctl enroll-keys --microsoft
 ```
 
-#### I cannot guarantee that this config will work for you. Also, I use NixOS with secure boot enabled for Windows 11 so this config uses the Lanzaboote boot loader. You can find more information on there repo page, https://github.com/nix-community/lanzaboote.
+To learn more about secure boot on NixOS, check out <a href="https://github.com/nix-community/lanzaboote">Lanzaboote</a>
 
 # Post Configuration
 ### Installing NvChad
