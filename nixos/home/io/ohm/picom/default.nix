@@ -9,8 +9,14 @@
     package = nixpkgs-f2k.packages.${pkgs.system}.picom-ft-labs;
     extraArgs = ["--animations"];
 
-    backend = "glx";
+    fade = true;
+    fadeDelta = 5;
+    fadeSteps = [ 0.05 0.05 ];
+    fadeExclude = [
+        "window_type *= 'menu'"
+    ];
 
+    backend = "glx";
     settings = {
       corner-radius = 12;
 
