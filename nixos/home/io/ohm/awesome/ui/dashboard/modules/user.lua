@@ -67,12 +67,14 @@ function user.widget()
     {
       user.pfp(),
       user.name(),
-      layout = wibox.layout.fixed.horizontal,
+      layout = wibox.layout.align.horizontal,
     },
     widget = wibox.container.background,
     bg = beautiful.surface0,
     fg = beautiful.blue,
     shape = helpers.rrect(6),
+    forced_height = dpi(20),
+    forced_width = dpi(20),
   })
 end
 

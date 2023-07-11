@@ -56,13 +56,18 @@ client.connect_signal("request::titlebars", function(c)
 			layout = wibox.layout.fixed.horizontal,
 		},
 		{
-			{
-				halign = "center",
-				widget = awful.titlebar.widget.titlewidget(c),
-			},
-			margins = 5,
+      {
+			  {
+				  align = "left",
+				  awful.titlebar.widget.titlewidget(c),
+          layout = wibox.container.margin,
+          left = 10,
+			  },
+        width = dpi(150),
+			  layout = wibox.container.constraint,
+      },
 			buttons = buttons,
-			layout = wibox.container.margin,
+      layout = wibox.layout.fixed.horizontal
 		},
 		{
 			paddined_button(awful.titlebar.widget.maximizedbutton(c), {
@@ -76,8 +81,7 @@ client.connect_signal("request::titlebars", function(c)
 				left = 10,
 			}),
 			layout = wibox.layout.fixed.horizontal,
-			valign = "center",
-			halign = "center",
+      halign = 'right',
 		},
 		buttons_loader,
 		buttons_loader,

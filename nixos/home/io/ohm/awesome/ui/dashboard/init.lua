@@ -23,17 +23,17 @@ box = wibox({
 
 box:setup({
 	-- Top center
-	layout = wibox.layout.stack,
 	{
+    user.widget(),
     {
-      margin(user.widget(), 10, 10, 10, 10),
       player.widget(),
-      layout = wibox.layout.align.horizontal,
+      layout = wibox.layout.align.horizontal, 
+      expand = 'none',
     },
-		halign = "center",
-		valign = "top",
-		layout = wibox.container.place,
+		layout = wibox.layout.align.vertical,
+    expand = 'none',
 	},
+  widget = wibox.layout.stack,
 })
 
 return box
