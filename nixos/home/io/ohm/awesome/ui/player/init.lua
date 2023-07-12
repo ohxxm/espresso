@@ -8,7 +8,7 @@ local playerctl = bling.signal.playerctl.lib()
 local dpi = beautiful.xresources.apply_dpi
 
 local picture = wibox.widget {
-    image = 'default.png',
+    image = beautiful.pfp,
     halign = 'center',
     forced_width = dpi(48),
     forced_height = dpi(48),
@@ -34,7 +34,6 @@ playerctl:connect_signal("metadata",
 end)
 
 player = wibox({
-  bgimage = beautiful.bg_normal,
   bg = beautiful.bg_normal,
   width = dpi(750),
   height = dpi(450),

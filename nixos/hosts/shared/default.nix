@@ -36,6 +36,7 @@ in
     unzip
     pavucontrol
     neovim-unwrapped
+    appimage-run
   ];
 
   users = {

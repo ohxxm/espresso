@@ -26,7 +26,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 
 	clock = wibox.widget({
 		widget = wibox.widget.textclock,
-		format = "%I:%M %p",
+		format = "%A, %B %d, %I:%M %p",
 		font = "Iosevka Nerd Font ExtraBold 16",
 	})
 

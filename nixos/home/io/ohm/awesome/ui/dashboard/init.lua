@@ -11,7 +11,7 @@ local user = require("ui.dashboard.modules.user")
 local player = require("ui.dashboard.modules.playerctl")
 
 box = wibox({
-	bgimage = beautiful.bg_normal,
+	bg = beautiful.bg_normal,
 	width = dpi(700),
 	height = dpi(700),
 	x = dpi(930),

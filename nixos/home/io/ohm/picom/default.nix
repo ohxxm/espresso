@@ -6,7 +6,7 @@
 }: {
   services.picom = {
     enable = true;
-    package = nixpkgs-f2k.packages.${pkgs.system}.picom-ft-labs;
+    package = pkgs.picom-pijulius;
     extraArgs = ["--animations"];
 
     fade = true;
@@ -16,13 +16,12 @@
         "window_type *= 'menu'"
     ];
 
-    backend = "glx";
     settings = {
       corner-radius = 12;
 
       animation-stiffness = 300;
-      animation-window-mass = 1;
-      animation-dampening = 25;
+      animation-window-mass = 1.3;
+      animation-dampening = 35;
       animation-clamping = true;
 
       animation-for-open-window = "zoom";
@@ -41,10 +40,6 @@
       no-fading-openclose = false;
 
       vsync = false;
-      glx-no-stencil = true;
-      glx-no-rebind-pixmap = true;
-      xrender-sync-fence = true;
-      use-damage = true;
     };
   };
 }
