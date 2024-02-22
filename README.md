@@ -29,53 +29,7 @@ IMMUTABLE / WIP / AESTHETIC
 | Application Launcher | [`rofi`](https://github.com/davatorium/rofi)                      |
 
 # Install
- * Boot into NixOS Live Environment
- * Partition & Mount Drive(s)
-
-```sh
-# Go to mounted drive, create etc folder and go to etc folder
-cd /mnt && mkdir etc && cd etc
-
-# Create secureboot directory
-mkdir /mnt/etc/secureboot
-
-# Clone my configuration
-git clone https://github.com/Spaxly/nixfiles
-
-# Move my config to etc folder
-mv nixfiles/nixos ./
-
-# Generate hardware-configuration and configuration.nix file
-nixos-generate-config --root /mnt
-
-# Delete generated configuration.nix and move hardware-configuration.nix to the appropriate directory
-rm configuration.nix && mv hardware-configuration.nix hosts/
-
-# Install NixOS with my configuration
-nixos-install --flake .#io --impure
-
-# OPTIONAL SECURE BOOT
-# Verify files are signed for secure boot
-sudo sbctl verify
-```
-### Reboot, enable secure boot and boot into newly installed NixOS
-```
-# Enroll secure boot keys
-sudo sbctl enroll-keys --microsoft
-```
-
-To learn more about secure boot on NixOS, check out <a href="https://github.com/nix-community/lanzaboote">Lanzaboote</a>
-
-# Post Configuration
-### Installing NvChad
-```bash
-git clone https://github.com/NvChad/NvChad --depth 1 ~/.config/nvim
-```
-
-# WIP
-* Finish bar configuration
-* Dashboard
-* Music player
+## ⚠️ This configuration is currently being overhauled so installation instructions won't be available
 
 # Credits
 
