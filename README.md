@@ -2,11 +2,11 @@
 
 
 ```ocaml
-Spaxly's NixOS Configuration
+ohxxm's NixOS Configuration
 ```
 <br>
 
-![alt text](https://github.com/Spaxly/espresso/blob/main/assets/desktop.png?raw=true)
+![alt text](https://github.com/ohxxm/espresso/blob/main/assets/desktop.png?raw=true)
 
 ```ocaml
 IMMUTABLE / WIP / AESTHETIC
